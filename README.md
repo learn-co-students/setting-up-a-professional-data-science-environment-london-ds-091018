@@ -5,7 +5,7 @@ Whether you’re just looking to learn the basics or want to become a profession
 If you already have Git and Anaconda installed, feel free to jump straight to the [cloning, virtual environment setup and testing](#cloning-this-repository).
 
 ## What tools do professional data scientists use?
-* **Python** - There are many languages that can be used for data science, but these days most data scientists are using Python to write their code. 
+* **Python** - There are many languages that can be used for data science, but these days most data scientists are using Python to write their code.
 * **Jupyter Notebook** - Most of those data scientists use Jupyter Notebook for writing their * Python - a tool that allows you to mix comments in-between your code snippets so you can document and share your thinking process and make it easier for others to review, replicate and expand on your work.
 * **Anaconda** - Anaconda is one of the most popular way for data scientists to install Python and Jupyter notebook on their computers. It also provides package management and virtual environments so you can get all the latest data science tools running like NumPy, SciPy and Tensorflow, and so you can use different versions of python and your packages for different projects without them conflicting with each other.
 * **Git** - Git is a version control system. It’s a way of keeping track of all the changes made across your project. Think of it like “track changes” in Word - but with the ability to track changes across multiple documents. At Flatiron School, we use git to keep track of all of the lessons we create and all the changes we make to them.
@@ -55,7 +55,7 @@ For extra options, enable the file system caching and the gt credential manager.
 
 ![screen-6](http://curriculum-content.s3.amazonaws.com/data-science/screen-6.png)
 
-And then wait while git is installed onto your computer. 
+And then wait while git is installed onto your computer.
 
 ![screen-7](http://curriculum-content.s3.amazonaws.com/data-science/screen-7.png)
 
@@ -80,8 +80,8 @@ You should then see a message confirming whether you really want to open the app
 
 ![screen-12](http://curriculum-content.s3.amazonaws.com/data-science/screen-12.png)
 
-Click on the “open” button. You should then see an installer screen. 
- 
+Click on the “open” button. You should then see an installer screen.
+
 ![screen-13](http://curriculum-content.s3.amazonaws.com/data-science/screen-13.png)
 
 Click “continue”, then “install”, enter your password when prompted, and when the installation is complete, click the “close” button.
@@ -234,7 +234,7 @@ Click on the “New” button in the top right corner.
 
 ![screen-43](http://curriculum-content.s3.amazonaws.com/data-science/screen-43.png)
 
-And select “Python 3” from the drop down list. 
+And select “Python 3” from the drop down list.
 
 When you do, you’ll see a new notebook in your browser window that looks something like this:
 
@@ -253,7 +253,7 @@ Then hold down the shift key and hit enter to run the code in the cell. You shou
 
 Don’t worry if the version number or date is slightly different. If you get a similar output (something that isn’t an error message), congratulations! You’ve got Anaconda, Python and the Jupyter notebook installed successfully!
 
-To shut down Jupyter notebook, just close the tabs in your browser containing the notebook and the list of noteboks. On a mac you should also click on the terminal window and hit “ctrl-C” to close the notebook. 
+To shut down Jupyter notebook, just close the tabs in your browser containing the notebook and the list of noteboks. On a mac you should also click on the terminal window and hit “ctrl-C” to close the notebook.
 
 ![screen-46](http://curriculum-content.s3.amazonaws.com/data-science/screen-46.png)
 
@@ -276,7 +276,7 @@ This will create a new subdirectory called setting-up-a-professional-data-scienc
 
 As you do data science projects, you will spend a lot of your time using pre-written libraries to speed up your development. Examples include NumPy, Pandas and scikit-learn. As you work on different projects, you may also find that you end up using different versions of different libraries for different projects. The most common versioning issue is that some projects will run in Python 2 whereas others will run in Python 3, but you may also find that different projects depend on different versions of libraries like tensorflow.
 
-Occasionally, code that works in an old version of a library won’t work in a newer version. So if you open up a new project and install the dependencies, it’s possible that your old project won’t work any more. 
+Occasionally, code that works in an old version of a library won’t work in a newer version. So if you open up a new project and install the dependencies, it’s possible that your old project won’t work any more.
 
 To avoid that problem, a best practice is to use “virtual environments”. Virtual environments allow you to have different versions of Python and different versions of the various libraries you use, so you can install a new version of a library for one project but still use the old version for another project. It’s almost as if you have multiple computers that you can swap between, each having a different setup and configuration, just by running a couple of commands.
 
@@ -289,8 +289,8 @@ If you want to learn more about conda environments, have a look at the [document
 You need to start by navigating into the root of this project folder, so you’re going to want to type `cd  setting-up-a-professional-data-science-environment` in your terminal.
 
 Then to create the environment, on a mac, type `conda env create -f environment.yml`. On windows, type `conda env create -f windows.yml`. Depending on the speed of your computer and your internet connection it may take up to five minutes for this to complete. While it does you should see output similar to that displayed below start to appear in your terminal.
- 
-![screen-47](http://curriculum-content.s3.amazonaws.com/data-science/screen-47.png) 
+
+![screen-47](http://curriculum-content.s3.amazonaws.com/data-science/screen-47.png)
 
 If you see a message that states “WARNING: A newer version of conda exists”, run `conda update -n base conda` and then try again to create the environment using `conda env create -f environment.yml`.
 
@@ -300,7 +300,7 @@ To confirm that it worked, type `conda info --envs` and confirm that the output 
 
 ## Running Tests
 
-There are lots of ways to use automated tests to improve your projects. If you’re writing some code and you want to make sure that it behaves as expected, it often makes sense to write tests (a) to make sure that it works the way you think it should and (b) to ensure that you don’t break it as you make changes to your code over time. It also allows you to start with the most important use cases and then explore and document edge cases over time. 
+There are lots of ways to use automated tests to improve your projects. If you’re writing some code and you want to make sure that it behaves as expected, it often makes sense to write tests (a) to make sure that it works the way you think it should and (b) to ensure that you don’t break it as you make changes to your code over time. It also allows you to start with the most important use cases and then explore and document edge cases over time.
 
 At Flatiron, we also use tests to provide students feedback on some of the labs we provide them. Often we’ll write automated tests for labs, so students can run the tests to see whether their code is working the way we expected it to, and perhaps even to get some hints on what they need to fix or change in their code.
 
@@ -312,7 +312,7 @@ There are a couple of things going on here. It's really important to run the tes
 
 The expected output should look something like the image below. In short, the first two tests should pass and the third one should fail with the message "This test *should* fail - if it doesn't, something is wrong!".
 
-![screen-48](http://curriculum-content.s3.amazonaws.com/data-science/screen-48.png) 
+![screen-48](http://curriculum-content.s3.amazonaws.com/data-science/screen-48.png)
 
 ## Troubleshooting
 * If you get a message - ModuleNotFound ipynb, firstly make sure you activated the conda environment - run `conda info --envs` and make sure there is a star next to the learn-env which denotes that you're running that environment. If not, try re-running the command to activate the environment. If you are in the right environment and still get that error, try running `pip install ipynb`. It may fix the issue.
@@ -322,3 +322,5 @@ The expected output should look something like the image below. In short, the fi
 ## Congratulations!
 
 Congratulations! If you've gotten this far and everything has worked, you have a great baseline setup for working as a professional data scientist!
+
+Testing
